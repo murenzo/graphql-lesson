@@ -30,6 +30,8 @@ const client = new ApolloClient({
 client.writeData({
   data: {
     cartHidden: true,
+    cartItems: [],
+    itemCount: 0,
   },
 });
 
@@ -43,5 +45,5 @@ ReactDOM.render(
       </BrowserRouter>
     </Provider>
   </ApolloProvider>,
-  document.getElementById("root"),
+  document.getElementById("root")
 );
